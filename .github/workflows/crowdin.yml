@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v7
-        if: github.repository == 'hestiacp/hestiacp'
+        if: github.repository == 'razordec/bonhava'
       - name: crowdin action
         uses: crowdin/github-action@v3
         if: github.repository == 'hestiacp/hestiacp'
