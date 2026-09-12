@@ -1,12 +1,12 @@
 name: Bug Report
-description: File a bug report and help us to improve Hestia Control Panel
+description: File a bug report and help us to improve Bonhava
 title: "[Bug] "
 labels: [bug]
 body:
   - type: markdown
     attributes:
       value: |
-        If you have encountered a bug or problem in Hestia Control Panel, use this form to let us know.
+        If you have encountered a bug or problem in Bonhava, use this form to let us know.
         **Important: DO NOT include any private/sensitive information such as email addresses, passwords, IP addresses, or hostnames.**
   - type: textarea
     id: describe
@@ -35,10 +35,10 @@ body:
       label: Which components are affected by this bug?
       multiple: true
       options:
-        - Control Panel Backend
-        - Control Panel Command Line Interface
-        - Control Panel Installation or Upgrade
-        - Control Panel Web Interface
+        - Website Backend
+        - Website Command Line Interface
+        - Website Installation or Upgrade
+        - Website Web Interface
         - (Backend) Web Server (Nginx, Apache2)
         - Database (MariaDB, MySQL, PostgreSQL)
         - Let's Encrypt SSL
@@ -46,12 +46,13 @@ body:
         - Mail Security (Antivirus, Antispam)
         - Webmail (Roundcube, SnappyMail)
         - Firewall (Iptables, Fail2ban)
+        - Host (Cloudflare Compute)
     validations:
       required: true
   - type: input
     id: version
     attributes:
-      label: Hestia Control Panel Version
+      label: Bonhava
       placeholder: 1.x.x
     validations:
       required: true
