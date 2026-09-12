@@ -16,7 +16,7 @@ jobs:
         if: github.repository == 'razordec/bonhava'
       - name: crowdin action
         uses: crowdin/github-action@v3
-        if: github.repository == 'hestiacp/hestiacp'
+        if: github.repository == 'razordec/bonhava'
         with:
           upload_sources: true
           upload_translations: false
